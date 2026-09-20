@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; style-src 'self'; base-uri 'none'; form-action 'none'">
+  <meta name="referrer" content="no-referrer">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="How PinGoTrek handles personal pins, optional private sharing, photos, account information, and privacy requests.">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Privacy · PinGoTrek</title>
+  <link rel="icon" href="assets/pingotrek-icon.png" type="image/png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header wrap">
+    <a class="brand" href="./" aria-label="PinGoTrek support home">
+      <img src="assets/pingotrek-icon.png" width="56" height="56" alt="">
+      <span>PinGo<span class="brand-green">Trek</span></span>
+    </a>
+    <nav class="primary-nav" aria-label="Main navigation">
+      <a href="./">Support</a>
+      <a href="privacy.html" aria-current="page">Privacy</a>
+    </nav>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <div class="page-intro">
+      <div class="wrap">
+        <h1>Your places.<br>Your choice to share.</h1>
+        <p class="lead">How PinGoTrek handles information in the invitation-only iPhone beta and on these public pages.</p>
+        <p class="updated">Privacy notice · Updated <time datetime="2026-09-20">September 20, 2026</time></p>
+      </div>
+    </div>
+
+    <div class="document-layout wrap">
+      <aside class="contents">
+        <nav aria-label="On this page">
+          <h2>In this notice</h2>
+          <ul>
+            <li><a href="#overview">The short version</a></li>
+            <li><a href="#on-device">On your iPhone</a></li>
+            <li><a href="#shared-data">What sharing sends</a></li>
+            <li><a href="#identity">Your sharing identity</a></li>
+            <li><a href="#retention">Delivery &amp; removal</a></li>
+            <li><a href="#other-services">Other services &amp; this site</a></li>
+            <li><a href="#choices">Your choices &amp; requests</a></li>
+          </ul>
+        </nav>
+        <p>Looking for an invitation or account answer? <a href="./">Visit support.</a></p>
+      </aside>
+
+      <div class="document">
+        <section id="overview" aria-labelledby="overview-title">
+          <h2 id="overview-title">The short version</h2>
+          <ul class="summary-list">
+            <li><strong>Personal use is local.</strong> Personal pins, photos, and Treks work without a sharing account.</li>
+            <li><strong>Sharing is optional.</strong> You choose a named private Trek and confirm what to publish.</li>
+            <li><strong>No ads, tracking, or data sales.</strong> There is no live person tracking or background GPS collection.</li>
+          </ul>
+          <p>Sharing does involve sending precise pin locations and other chosen content to a service and other participants. Offline recipients and provider records have limits on what can be removed immediately, explained below.</p>
+        </section>
+
+        <section id="on-device" aria-labelledby="device-title">
+          <h2 id="device-title">What stays on your iPhone</h2>
+          <p>Personal pins contain a name, an optional note, a saved location, facing information when available, and reference photos. Personal Treks organize those pins locally. You can use this personal library signed out and offline.</p>
+          <p>PinGoTrek keeps reduced photo copies and previews in the app. New full-resolution camera originals are saved to the system Photos library when you grant permission. Removing a pin or an app photo does not delete that Photos original. Your system Photos library may sync through iCloud according to your Apple settings, independently of PinGoTrek.</p>
+          <h3>Permissions follow the feature</h3>
+          <p>Location is used while using the app to save places and help navigate. Camera access supports taking photos and the directional AR view. Motion supports camera-facing information; Photos access supports saving originals and choosing images. There is no microphone or background-location requirement.</p>
+          <p>Photo copies can include the pin’s precise coordinates and facing information, with capture-location information when available and permitted. Treat a photo export as location-bearing content, not just an image.</p>
+        </section>
+
+        <section id="shared-data" aria-labelledby="shared-title">
+          <h2 id="shared-title">What private Trek sharing sends</h2>
+          <p>Sharing uses Supabase in North Virginia, United States. The service stores the sharing account, Trek and membership information, and the pins you choose to publish: pin names, notes, precise locations, facing information, and associated photo information.</p>
+          <p>Photo sharing sends reduced copies, no larger than 250 KB each, and previews no larger than 20 KB. It does not upload your full-resolution system Photos originals. These limits include photo metadata.</p>
+          <p>Publication and photo sharing require explicit consent for the named Trek. Joining a Trek, signing in, or organizing a personal Trek does not publish your personal library.</p>
+          <p>Published pins are linked to their creator’s edits. Later edits update the shared version. After you opt in to sharing photos for that pin, later added or changed photo versions follow that link. New pins and a first photo-sharing opt-in still require your explicit choice.</p>
+          <p>Participants with access to the Trek can receive its shared content. Share only places, notes, and photos you are comfortable giving them; the service is not an end-to-end encrypted messaging system.</p>
+        </section>
+
+        <section id="identity" aria-labelledby="identity-title">
+          <h2 id="identity-title">Your sharing identity</h2>
+          <p>Private sharing requires Sign in with Apple and a single-use beta-access invitation. Apple provides an app-specific stable user identifier and, when provided, your name and email address. An Apple relay email may be used if you choose Hide My Email.</p>
+          <p>These details support authentication, admission, Trek membership, and account requests. PinGoTrek does not receive your Apple password.</p>
+          <p>The beta has ten retained admission places, including the organizer. Deleting an account does not recycle a place or make its invitation reusable. A minimal participation record may remain to enforce admission and prevent abuse; it is not a reusable sharing account.</p>
+        </section>
+
+        <section id="retention" aria-labelledby="retention-title">
+          <h2 id="retention-title">Delivery is temporary. A Trek is not.</h2>
+          <p>Shared Trek and pin information remains available until sharing is ended or withdrawn. Treks do not automatically expire. Photo delivery is different: reduced photos use a temporary delivery window of <strong>no more than 24 hours</strong>.</p>
+          <p>Completed delivery acknowledgments, expiry, or removal can trigger earlier cleanup. The service queues deletion of the active stored photo objects and retries if deletion fails. The delivery cutoff is not a promise that every provider-internal cache or backup has been physically erased at that moment.</p>
+          <p>Photos and pins already received can stay on a participant’s device for offline use. They can remain there until the app reconnects and verifies that access has been revoked. Confirmed removal or ending, or signing out, clears the app-managed received cache. Content already received cannot be remotely recalled with certainty.</p>
+          <p>Deleting or unsharing while offline can also leave other participants with access until the service confirms the withdrawal. Closing the photo-delivery window does not delete a Trek or photos already received. Offering expired photos again requires the creator’s explicit resend.</p>
+          <h3>When you request account deletion</h3>
+          <p>Sharing-account deletion is separate from sign-out and from removing personal data. It removes the sharing account and associated active sharing access and content, while cleanup of stored photo objects may need retries. It does not delete your local personal pins, personal Treks, or system Photos originals.</p>
+          <p>Minimal anti-abuse participation records and media-usage accounting can remain without a reusable account profile. Service providers may also retain operational records or backups under their own policies. We do not promise immediate physical erasure of all provider-held copies or a fixed retention period for those records.</p>
+          <p>Account-deletion controls are not present in every beta build. Use the control if your build has it, or <a href="./#contact">contact support to request deletion</a>. See <a href="./#account">account help</a> for the separate Sign in with Apple revocation step when needed.</p>
+        </section>
+
+        <section id="other-services" aria-labelledby="services-title">
+          <h2 id="services-title">Other services and these pages</h2>
+          <h3>Service operation</h3>
+          <p>Apple provides sign-in and TestFlight distribution; Supabase provides private sharing. Network, session, and diagnostic information, including IP addresses, may be processed or retained by service providers. PinGoTrek does not intentionally log photo contents or complete authentication tokens, but that is not a promise that providers retain no operational data.</p>
+          <h3>Maps and one-time exports</h3>
+          <p>Map imagery can use Apple’s services. Choosing external directions sends the selected pin’s coordinates to Apple Maps. These services follow their own privacy practices.</p>
+          <p>If you choose a one-time email or system share-sheet export, your selected mail or sharing app handles the content. The export can include reduced photos, notes, precise coordinates, facing information, and map links. It is a forwardable snapshot: recipients and their providers can retain it. Ending a Trek or deleting a sharing account does not retract that export.</p>
+          <h3>This website</h3>
+          <p>These public support and privacy pages use no analytics, cookies, trackers, external fonts, or third-party embeds. GitHub Pages hosts this website. GitHub logs and stores visitors' IP addresses for security purposes and may process routine request information to operate the service. See the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>. There is no account sign-in or upload form on this site.</p>
+          <p>If you email support, your email provider and the support mailbox process your address and message so we can answer the request. Do not send private photos, passwords, sign-in codes, or invitation links.</p>
+        </section>
+
+        <section class="contact-section" id="choices" aria-labelledby="choices-title">
+          <h2 id="choices-title">Your choices and privacy requests</h2>
+          <p>Keep using personal pins without an account. Choose what to share, withdraw a publication, manage device permissions in iOS Settings, or request deletion of your sharing account.</p>
+          <p>For a question, correction, access request, or deletion request, contact support. We will verify your identity before acting on an account request, without asking for your Apple password, sign-in codes, invitation links, or photos.</p>
+          <a class="contact-link" href="mailto:ken@hotkrossbits.com?subject=PinGoTrek%20privacy%20request">Email a privacy request <span aria-hidden="true">↗</span></a>
+          <p class="contact-caution">This notice describes the current beta. If how PinGoTrek handles information changes, this page and its update date will change too.</p>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer wrap">
+    <p>PinGoTrek <span>· Personal places. Sharing by choice.</span></p>
+    <nav aria-label="Footer navigation">
+      <a href="./">Support</a>
+      <a href="./#contact">Contact</a>
+    </nav>
+  </footer>
+</body>
+</html>
