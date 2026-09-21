@@ -29,7 +29,7 @@
       <div class="wrap">
         <h1>Your places.<br>Your choice to share.</h1>
         <p class="lead">How PinGoTrek handles information in the invitation-only iPhone beta and on these public pages.</p>
-        <p class="updated">Privacy notice · Updated <time datetime="2026-09-20">September 20, 2026</time></p>
+        <p class="updated">Privacy notice · Updated <time datetime="2026-09-21">September 21, 2026</time></p>
       </div>
     </div>
 
@@ -83,7 +83,7 @@
           <h2 id="identity-title">Your sharing identity</h2>
           <p>Private sharing requires Sign in with Apple and a single-use beta-access invitation. Apple provides an app-specific stable user identifier and, when provided, your name and email address. An Apple relay email may be used if you choose Hide My Email.</p>
           <p>These details support authentication, admission, Trek membership, and account requests. PinGoTrek does not receive your Apple password.</p>
-          <p>The beta has ten retained admission places, including the organizer. Deleting an account does not recycle a place or make its invitation reusable. A minimal participation record may remain to enforce admission and prevent abuse; it is not a reusable sharing account.</p>
+          <p>The beta has ten retained admission places, including the organizer. Deleting an account does not recycle a place or make its invitation reusable. In the current beta, the same Apple identity cannot enroll again after deletion, even with a new invitation. A minimal participation record may remain to enforce admission and prevent abuse; it is not a reusable sharing account.</p>
         </section>
 
         <section id="retention" aria-labelledby="retention-title">
@@ -93,8 +93,11 @@
           <p>Photos and pins already received can stay on a participant’s device for offline use. They can remain there until the app reconnects and verifies that access has been revoked. Confirmed removal or ending, or signing out, clears the app-managed received cache. Content already received cannot be remotely recalled with certainty.</p>
           <p>Deleting or unsharing while offline can also leave other participants with access until the service confirms the withdrawal. Closing the photo-delivery window does not delete a Trek or photos already received. Offering expired photos again requires the creator’s explicit resend.</p>
           <h3>When you request account deletion</h3>
-          <p>Sharing-account deletion is separate from sign-out and from removing personal data. It removes the sharing account and associated active sharing access and content, while cleanup of stored photo objects may need retries. It does not delete your local personal pins, personal Treks, or system Photos originals.</p>
-          <p>Minimal anti-abuse participation records and media-usage accounting can remain without a reusable account profile. Service providers may also retain operational records or backups under their own policies. We do not promise immediate physical erasure of all provider-held copies or a fixed retention period for those records.</p>
+          <p>Sharing-account deletion is separate from sign-out and from removing personal data. The in-app flow requires an authenticated sharing session, your explicit confirmation, and fresh verification with Apple. Completed deletion removes the sharing account and associated active sharing access and content, while cleanup of stored photo objects may need retries.</p>
+          <p>Your local personal pins, on-device personal photos, personal Treks, and system Photos originals are preserved. The app clears received shared content and its sharing-account cache on your device. The limits on recalling copies held by other participants still apply.</p>
+          <p>App-account and shared-data deletion can complete independently of Apple access revocation. Automatic Apple revocation is best effort, and its status is reported separately. If it is unconfirmed, follow the Apple Account settings guidance or retry with fresh Apple verification where offered, without signing back into PinGoTrek or enrolling again.</p>
+          <p>Apple authorization codes and access or refresh tokens used for deletion-time verification and revocation are held only in request memory. PinGoTrek does not store those credentials in durable jobs for later revocation.</p>
+          <p>A minimal recovery receipt, a hashed Apple identity identifier, retained beta-admission and media-usage records, and pending cleanup information may remain without a reusable account profile. These records support deletion recovery, enforce retained admission places, and track usage and cleanup. Service providers may also retain operational records or backups under their own policies. We do not promise immediate physical erasure of all provider-held copies or a fixed retention period for these records.</p>
           <p>Account-deletion controls are not present in every beta build. Use the control if your build has it, or <a href="./#contact">contact support to request deletion</a>. See <a href="./#account">account help</a> for the separate Sign in with Apple revocation step when needed.</p>
         </section>
 

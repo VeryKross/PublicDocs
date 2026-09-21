@@ -93,10 +93,14 @@
         <section id="account" aria-labelledby="account-title">
           <h2 id="account-title">Sign-out is not account deletion</h2>
           <p>Signing out ends your local sharing session and clears the app’s received shared-pin cache. It does not delete your sharing account.</p>
-          <p>To request sharing-account deletion, use the in-app account-deletion control <strong>if your build includes it</strong>, or <a href="#contact">contact support</a>. Not every beta build has that control. Support will verify your identity before acting on an account request.</p>
-          <p>Deleting the sharing account is separate from deleting your own places. Your personal pins, personal Treks, and system Photos originals stay on your device. Received shared content is not part of that personal library.</p>
+          <p>To request sharing-account deletion, open <strong>Treks → Sharing &amp; account → Delete account</strong> <strong>if your build includes it</strong>, or <a href="#contact">contact support</a>. The control is for a signed-in sharing account, and not every beta build has it. Support will verify your identity before acting on an account request.</p>
+          <p>The in-app flow requires you to be signed in to your sharing account, explicitly confirm deletion, and complete a fresh verification with Apple.</p>
+          <p>After confirmed deletion, your personal pins, on-device personal photos, personal Treks, and system Photos originals stay on your device. The app clears received shared content and its sharing-account cache on that device. Deleting a sharing account is not the same as deleting your personal library.</p>
+          <p><strong>Only request deletion if you intend to leave sharing.</strong> The beta has ten retained admission places, and deleting an account does not free a place. In the current beta, the same Apple identity cannot enroll again after deletion, even with a new invitation. Account deletion is not a troubleshooting step or something you need to test to help with the beta.</p>
           <h3>Managing Sign in with Apple</h3>
-          <p>If Apple access cannot be revoked automatically during deletion, support may ask you to complete that step in your Apple Account settings. Follow <a href="https://support.apple.com/en-us/102571">Apple’s instructions for managing Sign in with Apple</a>.</p>
+          <p>Deleting your PinGoTrek sharing account and shared data can complete even if revoking Apple access is not confirmed. Automatic Apple revocation is a best-effort step with a separate result; do not assume it succeeded just because the sharing account was deleted.</p>
+          <p>If you are signed out and see <strong>Review account deletion</strong>, use it to review the pending deletion result.</p>
+          <p>If Apple revocation is unconfirmed, follow the app’s guidance to manage access in your Apple Account settings, or retry with fresh Apple verification where offered. You do not need to sign back into PinGoTrek or enroll again to complete this separate Apple step. Follow <a href="https://support.apple.com/en-us/102571">Apple’s instructions for managing Sign in with Apple</a>, or <a href="#contact">contact support</a> if you need help.</p>
           <p>Stopping Sign in with Apple by itself is not a PinGoTrek account-deletion request. Contact support if you still need your sharing account deleted.</p>
         </section>
 
