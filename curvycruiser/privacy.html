@@ -40,6 +40,7 @@
             <li><a href="#on-device">Your iPhone &amp; location</a></li>
             <li><a href="#providers">Maps, downloads &amp; Apple</a></li>
             <li><a href="#sharing">When you share a ride</a></li>
+            <li><a href="#qr-sharing">QR codes &amp; online sharing</a></li>
             <li><a href="#removal">Deleting your information</a></li>
             <li><a href="#website">This site &amp; support</a></li>
             <li><a href="#choices">Choices &amp; requests</a></li>
@@ -52,11 +53,11 @@
         <section id="overview" aria-labelledby="overview-title">
           <h2 id="overview-title">The short version</h2>
           <ul class="summary-list">
-            <li><strong>Your saved rides stay on your iPhone unless you share them or your phone backs them up.</strong> The app works out routes on your phone using downloaded state maps. You do not need a Curvy Cruiser account.</li>
+            <li><strong>Your saved rides stay on your iPhone unless you share them or your phone backs them up.</strong> Choosing Show QR code immediately uploads the whole ride for others to download for 24 hours. Stored copies may remain longer, as explained below. The app still works out routes on your phone using downloaded state maps, without a Curvy Cruiser account.</li>
             <li><strong>No ads or tracking.</strong> Curvy Cruiser does not include tools that track your use of the app for advertising or send us usage reports.</li>
-            <li><strong>Some features use the internet.</strong> Apple handles map pictures and place searches. A map download goes to the download provider. When you share a ride, the app you choose handles the file.</li>
+            <li><strong>Some features use the internet.</strong> Apple handles map pictures and place searches. A map download goes to the download provider. You can share a file through another app or choose to upload it for QR sharing through Cloudflare.</li>
           </ul>
-          <p>This notice covers the invitation-only test version. Ride sharing is still being tested. See <a href="./#sharing">how to send a ride with Outlook and why Apple Mail does not work yet</a>.</p>
+          <p>This notice covers the invitation-only test version. Ride sharing is still being tested. See <a href="./#sharing">how to send a ride file and the current Apple Mail limitation</a>, or read about <a href="./#qr-sharing">sharing with a QR code</a>.</p>
         </section>
 
         <section id="on-device" aria-labelledby="device-title">
@@ -77,14 +78,26 @@
         <section id="sharing" aria-labelledby="sharing-title">
           <h2 id="sharing-title">A shared ride can reveal private places</h2>
           <p>If your test version includes sharing, you can send a ride file ending in <strong>.curvyride</strong>. Your friend chooses whether to add it to the app and gets a separate saved copy. Curvy Cruiser does not require an account or iCloud to do this.</p>
+          <p>Sending a file directly through another app does not upload it to Curvy Cruiser's QR-sharing service. That other app handles the file under its own privacy rules.</p>
           <p>The file contains the full route, exact start and finish, stops, ride settings, warnings, and labels. It can reveal your home, a meeting place, or another private location. <strong>If a ride starts at Home, your home location is still in the file.</strong> Your friend's copy uses their own saved Home to work out the route, but that does not hide your location in the file you sent.</p>
           <p>Review a ride before sending it. Your friend can keep or forward it. Changing or deleting your ride later does not change their copy, and you cannot take the file back.</p>
           <p>The email, messaging, or file-saving service you choose handles the ride under its own privacy rules and may require an account. The protection of the file depends on that service; Curvy Cruiser does not guarantee that only you and your friend can read it.</p>
         </section>
 
+        <section id="qr-sharing" aria-labelledby="qr-sharing-title">
+          <h2 id="qr-sharing-title">Showing a QR code uploads your ride</h2>
+          <p>QR sharing is optional and separate from sending a file through another app. Choosing <strong>Show QR code</strong> starts uploading the entire selected ride to a sharing service hosted by Cloudflare immediately, with no second confirmation. It includes the full route, exact start and finish, Home location when used, stops, ride settings, warnings, and labels. Both sender and recipient need internet access.</p>
+          <p><strong>Anyone with the QR code or link can download the ride and forward it to others.</strong> This includes private locations in the file, such as your Home. The code is not limited to one named friend. Keep it private and share only rides you are comfortable giving to everyone who might receive it.</p>
+          <p>No sign-in is needed to download the ride. The uploaded file is not protected in a way that limits reading to just you and your friend: the sharing service can read it too.</p>
+          <p>There is no control to withdraw an upload or turn off its link early. Canceling, closing the screen, choosing Send file afterward, or creating another code does not undo a successful upload. An upload may have succeeded even if you canceled or the app did not receive a successful reply.</p>
+          <p>Downloads are blocked as soon as the link expires, 24 hours after upload. Deletion of the live file is scheduled separately and may be delayed. Expiration does not change or recall independent copies already downloaded or forwarded.</p>
+          <p>Cloudflare documents recovery copies covering the previous 30 days for the storage used by this service. This is not a promise that all provider-held information is erased within 30 days. Recovery copies, backups, and other provider records may follow different retention rules.</p>
+          <p>Cloudflare processes connection details, including IP addresses and the web addresses requested. The service uses IP addresses to limit excessive requests. The app's detailed request logging is turned off, but we have not independently checked all of Cloudflare's logging or how long it keeps records. See <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare's privacy policy</a>.</p>
+        </section>
+
         <section id="removal" aria-labelledby="removal-title">
           <h2 id="removal-title">Deleting rides and other saved information</h2>
-          <p>Your saved rides and maps stay on your phone until you remove them. Use the app's available controls to delete rides or maps, or change your Home and ride settings. Removing the app deletes its saved information from your iPhone, but not phone backups or ride files saved elsewhere.</p>
+          <p>Your saved rides and maps stay on your phone until you remove them. Use the app's available controls to delete rides or maps, or change your Home and ride settings. Removing the app deletes its saved information from your iPhone, but not phone backups, files already uploaded for QR sharing, or ride files saved elsewhere. QR uploads follow the separate access, deletion, and provider-retention practices above.</p>
           <p>There is no Curvy Cruiser account to close. Manage phone backups in iPhone Settings, and delete ride files from any email or file-saving apps where you kept them.</p>
           <p>Your friends control their own copies. Email and file-saving services may also keep records or backups under their own rules. Deleting a ride from your phone does not delete those copies. We cannot promise when another person or service will remove them.</p>
         </section>
@@ -92,12 +105,12 @@
         <section id="website" aria-labelledby="website-title">
           <h2 id="website-title">These pages and support messages</h2>
           <p>These pages do not use cookies, advertising, or tools that track what you read. There is no sign-in or form for sending files. GitHub Pages runs this website. GitHub keeps visitors' IP addresses for security and may use basic connection information to run the site. See the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>.</p>
-          <p>If you ask for help, we use your contact details and message to answer you. Your email or messaging service handles those messages under its own privacy rules. Do not send passwords, invitation links, or private ride files.</p>
+          <p>If you ask for help, we use your contact details and message to answer you. Your email or messaging service handles those messages under its own privacy rules. Do not send passwords, invitation links, private ride files, or ride-sharing codes and links.</p>
         </section>
 
         <section class="contact-section" id="choices" aria-labelledby="choices-title">
           <h2 id="choices-title">Your choices and questions</h2>
-          <p>You choose whether to share a ride. You can change location permission in iPhone Settings, delete saved rides, and manage your phone backups and shared files separately.</p>
+          <p>You choose whether to send a ride file or upload it by showing a QR code. You can change location permission in iPhone Settings, delete saved rides, and manage your phone backups and shared files separately.</p>
           <p>For a privacy question, a correction, or a request about information you sent when asking for help, <a href="./#contact">contact the person who invited you</a>. We cannot remove copies held by your friends or other services.</p>
           <p class="contact-caution">This notice describes the test version. If how Curvy Cruiser handles information changes, we will update this page and its date.</p>
         </section>

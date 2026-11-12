@@ -17,8 +17,18 @@ Curvy Cruiser public URLs:
 
 ## Curvy Cruiser content review
 
-The owner accepted the current support and privacy wording and authorized
-publication on November 12, 2026. Revise these pages as features change.
+The owner accepted the initial support and privacy wording and authorized
+publication on November 12, 2026 (commit `199afbe`). Revise these pages as
+features change.
+
+The owner authorized publication of the QR privacy update and matching support
+guidance on November 12, 2026. They describe the Cloudflare sharing service,
+including immediate upload with no second confirmation when choosing Show QR
+code, no early revocation (including after canceling), 24-hour download access,
+possibly delayed live-file deletion, longer provider recovery/backup retention,
+and access for anyone with the code or link. They also distinguish direct file
+sharing from QR uploads and disclose readable uploads and provider request
+metadata. Review these disclosures whenever the sharing behavior changes.
 
 The pages direct invited testers to their beta organizer for support and privacy
 questions. PinGoTrek's public mailbox has not been confirmed for Curvy Cruiser,
